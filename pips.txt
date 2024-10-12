@@ -1,0 +1,19 @@
+from flask import Flask, jsonify, request, session, redirect, url_for
+import oracledb
+from config import name, psw, cdir, wltloc, wlpsw, dsn, correo, correo_psw
+import bcrypt
+from flask_cors import CORS
+from flask_mail import Mail, Message
+from itsdangerous import URLSafeTimedSerializer, SignatureExpired
+import os 
+import time
+
+
+pip install flask
+pip install flask_cors
+pip install flask_mail
+pip install os
+pip install time
+pip install bcrypt
+pip install oracledb
+
